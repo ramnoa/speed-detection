@@ -32,7 +32,7 @@ if uploaded_file:
     out = cv2.VideoWriter(output_file, fourcc, fps, (w, h))
 
     # ------------------ INIT SPEED ESTIMATOR ------------------
-    model_file = "yolo26n.pt"
+    model_file = "yolov8n.pt"
     if not os.path.exists(model_file):
         st.error(f"YOLO model not found at {model_file}")
         st.stop()
